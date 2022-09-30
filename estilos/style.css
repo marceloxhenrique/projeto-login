@@ -6,7 +6,7 @@
 */
 
 :root {
-    --cor0: #49a09d;
+    --cor0: #379fd3;
     --cor1: #5f2c82;
 }
 
@@ -40,6 +40,9 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.451);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 div#imagem { 
     display: block;
