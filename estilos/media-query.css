@@ -61,7 +61,7 @@ Grandes telas: acima de 1200px
 @media screen and (height-max: 650px) {
     main > section#login {
         background-color: aquamarine;
-        height: 600px;
+        height: 500px;
 
     }
 }
