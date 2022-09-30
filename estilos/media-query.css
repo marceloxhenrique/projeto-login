@@ -58,9 +58,13 @@ Grandes telas: acima de 1200px
     }
 }
 
-@media screen and (height-max: 650px) {
+@media screen and (max-height: 650px) {
+    body{
+        background-color: aqua;
+    }
+
     main > section#login {
-        background-color: aquamarine;
+        
         height: 500px;
 
     }
