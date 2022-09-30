@@ -19,9 +19,10 @@ Grandes telas: acima de 1200px
     body {
         background-image: linear-gradient(to top, var(--cor0), var(--cor1) );
     }
-
+    
     main > section#login {
         width: 80vw;
+        height: 400px;
     }
 
     section#login > div#imagem {
@@ -44,6 +45,7 @@ Grandes telas: acima de 1200px
 
     main > section#login {
         width: 950px;
+        
     }
 
     section#login > div#imagem {
@@ -58,14 +60,3 @@ Grandes telas: acima de 1200px
     }
 }
 
-@media screen and (max-height: 650px) {
-    body{
-        background-color: aqua;
-    }
-
-    main > section#login {
-        
-        height: 500px;
-
-    }
-}
