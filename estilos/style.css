@@ -33,7 +33,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden;
 
     background-color: white;
@@ -42,6 +42,7 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.451);
 
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -85,26 +86,29 @@ div.campo > label {
 
 div.campo > span {
     color: white;
-    font-size: 2em ;
+    /* background-color: black; */
+    font-size: 2em;
     width: 40px;
     padding: 5px;
-    
+
 }
 
 div.campo > input {
-    background-color:#6acdff;
-    font-size: 1em;
-    width: 80%;
-    height: 100%;
-    transform: translateY(-13px);
-    
-    border: 0px;
-    border-radius: 8px;
-    padding: 4px;
-    
-    
-    
+   background-color: hsl(194, 100%, 84%);
+   font-size: 1em;
+   height: 100%;
+   border: 0px;
+   border-radius: 8px;
+   padding: 3px;
+   width: calc(100% - 45px);
+   transform: translateY(-13px);
 }
+
+div.campo > input:focus-within {  /* A caixa ganha um focus quando estiver digitando*/
+    background-color: white;
+    border: none;
+}
+
 
 form > input[type=submit] {
     display: block;
@@ -115,7 +119,7 @@ form > input[type=submit] {
     background-color: var(--cor0);
     color: white;
     border: none;
-    border-radius: 0px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
